@@ -1,0 +1,107 @@
+PODS:
+  - Asterism (1.0.0)
+  - DateTools (1.7.0)
+  - Expecta (1.0.5)
+  - ISO8601DateFormatterValueTransformer (0.6.1):
+    - RKValueTransformers (~> 1.1.0)
+  - JLRoutes (1.5.5)
+  - OCHamcrest (5.2.0)
+  - OCMockito (3.0.1):
+    - OCHamcrest (~> 5.1)
+  - OHHTTPStubs (4.7.1):
+    - OHHTTPStubs/Default (= 4.7.1)
+  - OHHTTPStubs/Core (4.7.1)
+  - OHHTTPStubs/Default (4.7.1):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.7.1)
+  - OMGHTTPURLRQ (2.1.3):
+    - OMGHTTPURLRQ/RQ (= 2.1.3)
+  - OMGHTTPURLRQ/FormURLEncode (2.1.3)
+  - OMGHTTPURLRQ/RQ (2.1.3):
+    - OMGHTTPURLRQ/FormURLEncode
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (2.1.3)
+  - PromiseKit (1.5.3):
+    - PromiseKit/CALayer (= 1.5.3)
+    - PromiseKit/NSNotificationCenter (= 1.5.3)
+    - PromiseKit/NSURLConnection (= 1.5.3)
+    - PromiseKit/Pause (= 1.5.3)
+    - PromiseKit/UIActionSheet (= 1.5.3)
+    - PromiseKit/UIAlertView (= 1.5.3)
+    - PromiseKit/UIView (= 1.5.3)
+    - PromiseKit/UIViewController (= 1.5.3)
+    - PromiseKit/Until (= 1.5.3)
+    - PromiseKit/When (= 1.5.3)
+  - PromiseKit/CALayer (1.5.3):
+    - PromiseKit/Promise
+  - PromiseKit/NSNotificationCenter (1.5.3):
+    - PromiseKit/Promise
+  - PromiseKit/NSURLConnection (1.5.3):
+    - OMGHTTPURLRQ (~> 2.1.3)
+    - PromiseKit/Promise
+  - PromiseKit/Pause (1.5.3):
+    - PromiseKit/Promise
+  - PromiseKit/Promise (1.5.3)
+  - PromiseKit/UIActionSheet (1.5.3):
+    - PromiseKit/Promise
+  - PromiseKit/UIAlertView (1.5.3):
+    - PromiseKit/Promise
+  - PromiseKit/UIView (1.5.3):
+    - PromiseKit/Promise
+  - PromiseKit/UIViewController (1.5.3):
+    - PromiseKit/Promise
+  - PromiseKit/Until (1.5.3):
+    - PromiseKit/Promise
+    - PromiseKit/When
+  - PromiseKit/When (1.5.3):
+    - PromiseKit/Promise
+  - RestKit/ObjectMapping (0.26.0):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.1)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.1.0)
+  - RestKit/Support (0.26.0):
+    - TransitionKit (~> 2.2)
+  - RKValueTransformers (1.1.2)
+  - Specta (1.0.5)
+  - TransitionKit (2.2.1)
+  - Typhoon (3.4.5):
+    - Typhoon/no-arc (= 3.4.5)
+  - Typhoon/no-arc (3.4.5)
+
+DEPENDENCIES:
+  - Asterism
+  - DateTools
+  - Expecta
+  - JLRoutes
+  - OCMockito
+  - OHHTTPStubs
+  - PromiseKit (~> 1.5.0)
+  - RestKit/ObjectMapping
+  - Specta
+  - Typhoon
+
+SPEC CHECKSUMS:
+  Asterism: b2992aaf4ac2dbc66c3aea3a6412c67e3e689835
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  JLRoutes: d191a496b820f60d70225202d04289582da962df
+  OCHamcrest: 218dc4022a5e928a275771da70c5dbea9f859287
+  OCMockito: 9eee3c61e42f7cb8aa015d66f8cc16849701d973
+  OHHTTPStubs: f7d1604d04d37d055460c0ef9af01bb249ded0fa
+  OMGHTTPURLRQ: c4268dea4295b585d711055dbcd87bfa82badd5f
+  PromiseKit: ecdccab1791b95b4752a9fac57223044f5a6c105
+  RestKit: 112fba5bd1f97598aac0db7981863d5fdc0263a2
+  RKValueTransformers: 66ac5e4f077fdbe3496e792d89eeff4c3eb67701
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
+  Typhoon: 200100687af3233ec5ed019064df3c9ffe350475
+
+COCOAPODS: 0.38.2

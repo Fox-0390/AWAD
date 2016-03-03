@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>storyboard_name_iPhone</key>
+	<string>Main</string>
+	<key>citySuggest_Base_Url</key>
+	<string>https://www.anywayanyday.com/AirportNames/</string>
+	<key>search_request_Base_Url</key>
+	<string>https://www.anywayanyday.com/api2/NewRequest2/</string>
+	<key>tickets_service_Base_Url</key>
+	<string>https://www.anywayanyday.com/api2/Fares2/</string>
+	<key>tickets_service_state_Base_Url</key>
+	<string>https://www.anywayanyday.com/api2/RequestState/</string>
+</dict>
+</plist>

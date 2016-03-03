@@ -1,0 +1,27 @@
+//
+//  Spec-Prefix.pch
+//  AWAD
+//
+//  Created by user on 27.02.16.
+//  Copyright © 2016 user. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+
+#import <Asterism/Asterism.h>
+
+#import <Specta/Specta.h>
+
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
+
+#define HC_SHORTHAND
+#import <OCHamcrest/OCHamcrest.h>
+
+#define MOCKITO_SHORTHAND
+#import <OCMockito/OCMockito.h>
+#endif

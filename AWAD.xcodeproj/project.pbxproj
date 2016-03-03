@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20C7D139A26B05AFF64D8F09 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A669480FA23D3341DC4F0F2 /* libPods-Specs.a */; };
+		65FBF910F012865D3A711C55 /* libPods-AWAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF75CBDC32186D09F655BB /* libPods-AWAD.a */; };
+		CEFABCC11C81A80300F2C105 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABCC01C81A80300F2C105 /* main.m */; };
+		CEFABCCA1C81A80300F2C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFABCC81C81A80300F2C105 /* Main.storyboard */; };
+		CEFABCCC1C81A80300F2C105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFABCCB1C81A80300F2C105 /* Assets.xcassets */; };
+		CEFABCCF1C81A80300F2C105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFABCCD1C81A80300F2C105 /* LaunchScreen.storyboard */; };
+		CEFABCEB1C81A92C00F2C105 /* Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABCEA1C81A92C00F2C105 /* Specs.m */; };
+		CEFABCFB1C81AA6300F2C105 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABCFA1C81AA6300F2C105 /* AppDelegate.m */; };
+		CEFABCFF1C81AEBA00F2C105 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFABCFE1C81AEBA00F2C105 /* Configuration.plist */; };
+		CEFABD011C81AECA00F2C105 /* TestConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFABD001C81AECA00F2C105 /* TestConfiguration.plist */; };
+		CEFABD041C81B30000F2C105 /* AWADDALAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD031C81B30000F2C105 /* AWADDALAssembly.m */; };
+		CEFABD071C81B39700F2C105 /* AWADApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD061C81B39700F2C105 /* AWADApplicationAssembly.m */; };
+		CEFABD0A1C81B46F00F2C105 /* AWADTestDALAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD091C81B46F00F2C105 /* AWADTestDALAssembly.m */; };
+		CEFABD1E1C821A7D00F2C105 /* AWADCitySuggestRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD1D1C821A7D00F2C105 /* AWADCitySuggestRepositoryImpl.m */; };
+		CEFABD231C821BB700F2C105 /* AWADCitySuggestServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD221C821BB700F2C105 /* AWADCitySuggestServiceImpl.m */; };
+		CEFABD271C82212200F2C105 /* AWADCitySuggestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD261C82212200F2C105 /* AWADCitySuggestModel.m */; };
+		CEFABD2B1C82223300F2C105 /* AWADCitySuggestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD2A1C82223300F2C105 /* AWADCitySuggestResult.m */; };
+		CEFABD321C8223EF00F2C105 /* AWADCitySuggestsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD311C8223EF00F2C105 /* AWADCitySuggestsSpec.m */; };
+		CEFABD371C822F6B00F2C105 /* SharingTestingData.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD351C822BB200F2C105 /* SharingTestingData.m */; };
+		CEFABD431C84423D00F2C105 /* AWADStartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD421C84423D00F2C105 /* AWADStartPageViewController.m */; };
+		CEFABD461C84427D00F2C105 /* AWADStartPagePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD451C84427D00F2C105 /* AWADStartPagePresenter.m */; };
+		CEFABD4A1C8443BF00F2C105 /* AWADStartPageInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD491C8443BF00F2C105 /* AWADStartPageInteractor.m */; };
+		CEFABD501C8493DB00F2C105 /* AWADRouterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD4F1C8493DB00F2C105 /* AWADRouterImpl.m */; };
+		CEFABD531C8495E700F2C105 /* AWADFlowAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD521C8495E700F2C105 /* AWADFlowAssembly.m */; };
+		CEFABD561C84989A00F2C105 /* AWADFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD551C84989A00F2C105 /* AWADFlowController.m */; };
+		CEFABD5A1C84A26400F2C105 /* AWADRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD591C84A26400F2C105 /* AWADRootViewController.m */; };
+		CEFABD5D1C84A6AB00F2C105 /* AWADRouterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD5C1C84A6AB00F2C105 /* AWADRouterAssembly.m */; };
+		CEFABD601C85F02500F2C105 /* AWADSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD5F1C85F02500F2C105 /* AWADSearchViewController.m */; };
+		CEFABD641C85F0BD00F2C105 /* AWADUserInputModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD631C85F0BD00F2C105 /* AWADUserInputModel.m */; };
+		CEFABD671C85F23F00F2C105 /* AWADInteractorAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD661C85F23F00F2C105 /* AWADInteractorAssembly.m */; };
+		CEFABD6A1C85F27400F2C105 /* AWADPresenterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD691C85F27400F2C105 /* AWADPresenterAssembly.m */; };
+		CEFABD6E1C86128200F2C105 /* AWADSuggestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD6D1C86128200F2C105 /* AWADSuggestsViewController.m */; };
+		CEFABD711C86C98600F2C105 /* AWADSuggestsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD701C86C98600F2C105 /* AWADSuggestsPresenter.m */; };
+		CEFABD791C8717BB00F2C105 /* AWADDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD781C8717BB00F2C105 /* AWADDatePickerViewController.m */; };
+		CEFABD7C1C8717DE00F2C105 /* AWADDatePickerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD7B1C8717DE00F2C105 /* AWADDatePickerPresenter.m */; };
+		CEFABD881C8755CB00F2C105 /* AWADSearchRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD871C8755CB00F2C105 /* AWADSearchRepositoryImpl.m */; };
+		CEFABD8B1C8755DB00F2C105 /* AWADSearchServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD8A1C8755DB00F2C105 /* AWADSearchServiceImpl.m */; };
+		CEFABD901C87591900F2C105 /* AWADSearchRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD8F1C87591900F2C105 /* AWADSearchRequestSpec.m */; };
+		CEFABD931C87605A00F2C105 /* AWADSearchRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD921C87605900F2C105 /* AWADSearchRequestModel.m */; };
+		CEFABD9C1C87661B00F2C105 /* AWADSearchPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABD9B1C87661B00F2C105 /* AWADSearchPresenter.m */; };
+		CEFABDA81C87899100F2C105 /* AWADResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDA71C87899100F2C105 /* AWADResultViewController.m */; };
+		CEFABDB01C8789E000F2C105 /* AWADResultInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDAB1C8789E000F2C105 /* AWADResultInteractor.m */; };
+		CEFABDB11C8789E000F2C105 /* AWADResultPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDAE1C8789E000F2C105 /* AWADResultPresenter.m */; };
+		CEFABDB41C879E6E00F2C105 /* AWADTicketsRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDB31C879E6E00F2C105 /* AWADTicketsRepositoryImpl.m */; };
+		CEFABDB71C879E8700F2C105 /* AWADTicketsServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDB61C879E8700F2C105 /* AWADTicketsServiceImpl.m */; };
+		CEFABDBC1C87A24900F2C105 /* AWADTicketsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDBB1C87A24900F2C105 /* AWADTicketsSpec.m */; };
+		CEFABDBF1C87A6D200F2C105 /* AWADTicketsResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDBE1C87A6D200F2C105 /* AWADTicketsResultModel.m */; };
+		CEFABDC21C87A70300F2C105 /* AWADTicketsItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDC11C87A70300F2C105 /* AWADTicketsItemModel.m */; };
+		CEFABDC51C87A9F000F2C105 /* AWADTicketsFareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDC41C87A9F000F2C105 /* AWADTicketsFareItem.m */; };
+		CEFABDC81C87BDBC00F2C105 /* AWADTickerRequestState.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDC71C87BDBC00F2C105 /* AWADTickerRequestState.m */; };
+		CEFABDCB1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDCA1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEFABCED1C81A92C00F2C105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFABCB41C81A80300F2C105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFABCBB1C81A80300F2C105;
+			remoteInfo = AWAD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		069C2D9E5004A14BD8AF8DF6 /* Pods-Specs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.debug.xcconfig"; sourceTree = "<group>"; };
+		7A669480FA23D3341DC4F0F2 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9F0014716C449633BF1D2C /* Pods-AWAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWAD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWAD/Pods-AWAD.debug.xcconfig"; sourceTree = "<group>"; };
+		86A06C140EA3F4C91E799F8F /* Pods-AWAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWAD.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWAD/Pods-AWAD.release.xcconfig"; sourceTree = "<group>"; };
+		BCFBF314EF27E6AF732503D0 /* Pods-Specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.release.xcconfig"; sourceTree = "<group>"; };
+		CEFABCBC1C81A80300F2C105 /* AWAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFABCC01C81A80300F2C105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEFABCC91C81A80300F2C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEFABCCB1C81A80300F2C105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFABCCE1C81A80300F2C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEFABCD01C81A80300F2C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFABCE81C81A92C00F2C105 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFABCEA1C81A92C00F2C105 /* Specs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Specs.m; sourceTree = "<group>"; };
+		CEFABCEC1C81A92C00F2C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFABCF91C81AA6300F2C105 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEFABCFA1C81AA6300F2C105 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEFABCFC1C81AE0400F2C105 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		CEFABCFD1C81AE0400F2C105 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CEFABCFE1C81AEBA00F2C105 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		CEFABD001C81AECA00F2C105 /* TestConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestConfiguration.plist; sourceTree = "<group>"; };
+		CEFABD021C81B30000F2C105 /* AWADDALAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADDALAssembly.h; sourceTree = "<group>"; };
+		CEFABD031C81B30000F2C105 /* AWADDALAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADDALAssembly.m; sourceTree = "<group>"; };
+		CEFABD051C81B39700F2C105 /* AWADApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADApplicationAssembly.h; sourceTree = "<group>"; };
+		CEFABD061C81B39700F2C105 /* AWADApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADApplicationAssembly.m; sourceTree = "<group>"; };
+		CEFABD081C81B46F00F2C105 /* AWADTestDALAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTestDALAssembly.h; sourceTree = "<group>"; };
+		CEFABD091C81B46F00F2C105 /* AWADTestDALAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTestDALAssembly.m; sourceTree = "<group>"; };
+		CEFABD1A1C8219C800F2C105 /* AWADCitySuggestsDAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADCitySuggestsDAL.h; sourceTree = "<group>"; };
+		CEFABD1B1C821A4E00F2C105 /* AWADCitySuggestRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADCitySuggestRepository.h; sourceTree = "<group>"; };
+		CEFABD1C1C821A7D00F2C105 /* AWADCitySuggestRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADCitySuggestRepositoryImpl.h; sourceTree = "<group>"; };
+		CEFABD1D1C821A7D00F2C105 /* AWADCitySuggestRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADCitySuggestRepositoryImpl.m; sourceTree = "<group>"; };
+		CEFABD201C821B7C00F2C105 /* AWADCitySuggestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADCitySuggestService.h; sourceTree = "<group>"; };
+		CEFABD211C821BB700F2C105 /* AWADCitySuggestServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADCitySuggestServiceImpl.h; sourceTree = "<group>"; };
+		CEFABD221C821BB700F2C105 /* AWADCitySuggestServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADCitySuggestServiceImpl.m; sourceTree = "<group>"; };
+		CEFABD251C82212200F2C105 /* AWADCitySuggestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADCitySuggestModel.h; sourceTree = "<group>"; };
+		CEFABD261C82212200F2C105 /* AWADCitySuggestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADCitySuggestModel.m; sourceTree = "<group>"; };
+		CEFABD291C82223300F2C105 /* AWADCitySuggestResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADCitySuggestResult.h; sourceTree = "<group>"; };
+		CEFABD2A1C82223300F2C105 /* AWADCitySuggestResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADCitySuggestResult.m; sourceTree = "<group>"; };
+		CEFABD311C8223EF00F2C105 /* AWADCitySuggestsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADCitySuggestsSpec.m; sourceTree = "<group>"; };
+		CEFABD331C82248600F2C105 /* Spec-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Spec-Prefix.pch"; sourceTree = "<group>"; };
+		CEFABD341C822BB200F2C105 /* SharingTestingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharingTestingData.h; sourceTree = "<group>"; };
+		CEFABD351C822BB200F2C105 /* SharingTestingData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharingTestingData.m; sourceTree = "<group>"; };
+		CEFABD401C84419F00F2C105 /* AWADStartPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADStartPageView.h; sourceTree = "<group>"; };
+		CEFABD411C84423D00F2C105 /* AWADStartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADStartPageViewController.h; sourceTree = "<group>"; };
+		CEFABD421C84423D00F2C105 /* AWADStartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADStartPageViewController.m; sourceTree = "<group>"; };
+		CEFABD441C84427D00F2C105 /* AWADStartPagePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADStartPagePresenter.h; sourceTree = "<group>"; };
+		CEFABD451C84427D00F2C105 /* AWADStartPagePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADStartPagePresenter.m; sourceTree = "<group>"; };
+		CEFABD471C8442A100F2C105 /* AWADStartPageIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADStartPageIO.h; sourceTree = "<group>"; };
+		CEFABD481C8443BF00F2C105 /* AWADStartPageInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADStartPageInteractor.h; sourceTree = "<group>"; };
+		CEFABD491C8443BF00F2C105 /* AWADStartPageInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADStartPageInteractor.m; sourceTree = "<group>"; };
+		CEFABD4D1C84910300F2C105 /* AWADRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADRouter.h; sourceTree = "<group>"; };
+		CEFABD4E1C8493DB00F2C105 /* AWADRouterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADRouterImpl.h; sourceTree = "<group>"; };
+		CEFABD4F1C8493DB00F2C105 /* AWADRouterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADRouterImpl.m; sourceTree = "<group>"; };
+		CEFABD511C8495E700F2C105 /* AWADFlowAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADFlowAssembly.h; sourceTree = "<group>"; };
+		CEFABD521C8495E700F2C105 /* AWADFlowAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADFlowAssembly.m; sourceTree = "<group>"; };
+		CEFABD541C84989A00F2C105 /* AWADFlowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADFlowController.h; sourceTree = "<group>"; };
+		CEFABD551C84989A00F2C105 /* AWADFlowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADFlowController.m; sourceTree = "<group>"; };
+		CEFABD571C849A5700F2C105 /* AWAD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AWAD-Prefix.pch"; sourceTree = "<group>"; };
+		CEFABD581C84A26400F2C105 /* AWADRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADRootViewController.h; sourceTree = "<group>"; };
+		CEFABD591C84A26400F2C105 /* AWADRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADRootViewController.m; sourceTree = "<group>"; };
+		CEFABD5B1C84A6AB00F2C105 /* AWADRouterAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADRouterAssembly.h; sourceTree = "<group>"; };
+		CEFABD5C1C84A6AB00F2C105 /* AWADRouterAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADRouterAssembly.m; sourceTree = "<group>"; };
+		CEFABD5E1C85F02500F2C105 /* AWADSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchViewController.h; sourceTree = "<group>"; };
+		CEFABD5F1C85F02500F2C105 /* AWADSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSearchViewController.m; sourceTree = "<group>"; };
+		CEFABD621C85F0BD00F2C105 /* AWADUserInputModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADUserInputModel.h; sourceTree = "<group>"; };
+		CEFABD631C85F0BD00F2C105 /* AWADUserInputModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADUserInputModel.m; sourceTree = "<group>"; };
+		CEFABD651C85F23F00F2C105 /* AWADInteractorAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADInteractorAssembly.h; sourceTree = "<group>"; };
+		CEFABD661C85F23F00F2C105 /* AWADInteractorAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADInteractorAssembly.m; sourceTree = "<group>"; };
+		CEFABD681C85F27400F2C105 /* AWADPresenterAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADPresenterAssembly.h; sourceTree = "<group>"; };
+		CEFABD691C85F27400F2C105 /* AWADPresenterAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADPresenterAssembly.m; sourceTree = "<group>"; };
+		CEFABD6C1C86128200F2C105 /* AWADSuggestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSuggestsViewController.h; sourceTree = "<group>"; };
+		CEFABD6D1C86128200F2C105 /* AWADSuggestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSuggestsViewController.m; sourceTree = "<group>"; };
+		CEFABD6F1C86C98600F2C105 /* AWADSuggestsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSuggestsPresenter.h; sourceTree = "<group>"; };
+		CEFABD701C86C98600F2C105 /* AWADSuggestsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSuggestsPresenter.m; sourceTree = "<group>"; };
+		CEFABD721C86C9B500F2C105 /* AWADSuggestsIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWADSuggestsIO.h; sourceTree = "<group>"; };
+		CEFABD731C86CAE100F2C105 /* AWADSuggestsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSuggestsView.h; sourceTree = "<group>"; };
+		CEFABD771C8717BB00F2C105 /* AWADDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADDatePickerViewController.h; sourceTree = "<group>"; };
+		CEFABD781C8717BB00F2C105 /* AWADDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADDatePickerViewController.m; sourceTree = "<group>"; };
+		CEFABD7A1C8717DE00F2C105 /* AWADDatePickerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADDatePickerPresenter.h; sourceTree = "<group>"; };
+		CEFABD7B1C8717DE00F2C105 /* AWADDatePickerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADDatePickerPresenter.m; sourceTree = "<group>"; };
+		CEFABD7D1C8717F400F2C105 /* AWADDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADDatePickerView.h; sourceTree = "<group>"; };
+		CEFABD801C87187A00F2C105 /* AWADDatePickerIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADDatePickerIO.h; sourceTree = "<group>"; };
+		CEFABD861C8755CB00F2C105 /* AWADSearchRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchRepositoryImpl.h; sourceTree = "<group>"; };
+		CEFABD871C8755CB00F2C105 /* AWADSearchRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSearchRepositoryImpl.m; sourceTree = "<group>"; };
+		CEFABD891C8755DB00F2C105 /* AWADSearchServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchServiceImpl.h; sourceTree = "<group>"; };
+		CEFABD8A1C8755DB00F2C105 /* AWADSearchServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSearchServiceImpl.m; sourceTree = "<group>"; };
+		CEFABD8C1C8755F300F2C105 /* AWADSearchRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchRepository.h; sourceTree = "<group>"; };
+		CEFABD8D1C87560B00F2C105 /* AWADSearchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchService.h; sourceTree = "<group>"; };
+		CEFABD8E1C87568200F2C105 /* AWADSearchDAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchDAL.h; sourceTree = "<group>"; };
+		CEFABD8F1C87591900F2C105 /* AWADSearchRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSearchRequestSpec.m; sourceTree = "<group>"; };
+		CEFABD911C87605900F2C105 /* AWADSearchRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchRequestModel.h; sourceTree = "<group>"; };
+		CEFABD921C87605900F2C105 /* AWADSearchRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSearchRequestModel.m; sourceTree = "<group>"; };
+		CEFABD9A1C87661B00F2C105 /* AWADSearchPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchPresenter.h; sourceTree = "<group>"; };
+		CEFABD9B1C87661B00F2C105 /* AWADSearchPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADSearchPresenter.m; sourceTree = "<group>"; };
+		CEFABD9D1C87662900F2C105 /* AWADSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchView.h; sourceTree = "<group>"; };
+		CEFABDA41C8766C600F2C105 /* AWADSearchIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADSearchIO.h; sourceTree = "<group>"; };
+		CEFABDA61C87899100F2C105 /* AWADResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWADResultViewController.h; path = AWAD/Controllers/Results/AWADResultViewController.h; sourceTree = SOURCE_ROOT; };
+		CEFABDA71C87899100F2C105 /* AWADResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWADResultViewController.m; path = AWAD/Controllers/Results/AWADResultViewController.m; sourceTree = SOURCE_ROOT; };
+		CEFABDA91C8789E000F2C105 /* AWADResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADResultView.h; sourceTree = "<group>"; };
+		CEFABDAA1C8789E000F2C105 /* AWADResultInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADResultInteractor.h; sourceTree = "<group>"; };
+		CEFABDAB1C8789E000F2C105 /* AWADResultInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADResultInteractor.m; sourceTree = "<group>"; };
+		CEFABDAC1C8789E000F2C105 /* AWADResultIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADResultIO.h; sourceTree = "<group>"; };
+		CEFABDAD1C8789E000F2C105 /* AWADResultPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADResultPresenter.h; sourceTree = "<group>"; };
+		CEFABDAE1C8789E000F2C105 /* AWADResultPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADResultPresenter.m; sourceTree = "<group>"; };
+		CEFABDAF1C8789E000F2C105 /* AWADResultProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADResultProtocol.h; sourceTree = "<group>"; };
+		CEFABDB21C879E6E00F2C105 /* AWADTicketsRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsRepositoryImpl.h; sourceTree = "<group>"; };
+		CEFABDB31C879E6E00F2C105 /* AWADTicketsRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsRepositoryImpl.m; sourceTree = "<group>"; };
+		CEFABDB51C879E8700F2C105 /* AWADTicketsServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsServiceImpl.h; sourceTree = "<group>"; };
+		CEFABDB61C879E8700F2C105 /* AWADTicketsServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsServiceImpl.m; sourceTree = "<group>"; };
+		CEFABDB81C879E9900F2C105 /* AWADTicketsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsService.h; sourceTree = "<group>"; };
+		CEFABDB91C879EAD00F2C105 /* AWADTicketsRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsRepository.h; sourceTree = "<group>"; };
+		CEFABDBA1C87A00500F2C105 /* AWADTicketsDAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsDAL.h; sourceTree = "<group>"; };
+		CEFABDBB1C87A24900F2C105 /* AWADTicketsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsSpec.m; sourceTree = "<group>"; };
+		CEFABDBD1C87A6D200F2C105 /* AWADTicketsResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsResultModel.h; sourceTree = "<group>"; };
+		CEFABDBE1C87A6D200F2C105 /* AWADTicketsResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsResultModel.m; sourceTree = "<group>"; };
+		CEFABDC01C87A70300F2C105 /* AWADTicketsItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsItemModel.h; sourceTree = "<group>"; };
+		CEFABDC11C87A70300F2C105 /* AWADTicketsItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsItemModel.m; sourceTree = "<group>"; };
+		CEFABDC31C87A9F000F2C105 /* AWADTicketsFareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsFareItem.h; sourceTree = "<group>"; };
+		CEFABDC41C87A9F000F2C105 /* AWADTicketsFareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsFareItem.m; sourceTree = "<group>"; };
+		CEFABDC61C87BDBC00F2C105 /* AWADTickerRequestState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTickerRequestState.h; sourceTree = "<group>"; };
+		CEFABDC71C87BDBC00F2C105 /* AWADTickerRequestState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTickerRequestState.m; sourceTree = "<group>"; };
+		CEFABDC91C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsRequestStateRepositoryImpl.h; sourceTree = "<group>"; };
+		CEFABDCA1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsRequestStateRepositoryImpl.m; sourceTree = "<group>"; };
+		CEFABDCC1C87BE2D00F2C105 /* AWADTicketsRequestStateRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsRequestStateRepository.h; sourceTree = "<group>"; };
+		D2BF75CBDC32186D09F655BB /* libPods-AWAD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AWAD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFABCB91C81A80300F2C105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FBF910F012865D3A711C55 /* libPods-AWAD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFABCE51C81A92C00F2C105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C7D139A26B05AFF64D8F09 /* libPods-Specs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4549BFDBD32D2E9272C813C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E9F0014716C449633BF1D2C /* Pods-AWAD.debug.xcconfig */,
+				86A06C140EA3F4C91E799F8F /* Pods-AWAD.release.xcconfig */,
+				069C2D9E5004A14BD8AF8DF6 /* Pods-Specs.debug.xcconfig */,
+				BCFBF314EF27E6AF732503D0 /* Pods-Specs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC5AF34669776ED0D4E2FFF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF75CBDC32186D09F655BB /* libPods-AWAD.a */,
+				7A669480FA23D3341DC4F0F2 /* libPods-Specs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFABCB31C81A80300F2C105 = {
+			isa = PBXGroup;
+			children = (
+				CEFABCBE1C81A80300F2C105 /* AWAD */,
+				CEFABCE91C81A92C00F2C105 /* Specs */,
+				CEFABCBD1C81A80300F2C105 /* Products */,
+				4549BFDBD32D2E9272C813C8 /* Pods */,
+				AC5AF34669776ED0D4E2FFF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFABCBD1C81A80300F2C105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABCBC1C81A80300F2C105 /* AWAD.app */,
+				CEFABCE81C81A92C00F2C105 /* Specs.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFABCBE1C81A80300F2C105 /* AWAD */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD611C85F0A400F2C105 /* UserData */,
+				CEFABD4B1C84446500F2C105 /* Router */,
+				CEFABCF41C81A9E900F2C105 /* Assembly */,
+				CEFABCF21C81A9E900F2C105 /* DAL */,
+				CEFABCF31C81A9E900F2C105 /* Controllers */,
+				CEFABCF51C81AA3400F2C105 /* Stroyboards */,
+				CEFABCCB1C81A80300F2C105 /* Assets.xcassets */,
+				CEFABCD01C81A80300F2C105 /* Info.plist */,
+				CEFABCBF1C81A80300F2C105 /* Supporting Files */,
+			);
+			path = AWAD;
+			sourceTree = "<group>";
+		};
+		CEFABCBF1C81A80300F2C105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABCC01C81A80300F2C105 /* main.m */,
+				CEFABD571C849A5700F2C105 /* AWAD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFABCE91C81A92C00F2C105 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABCEA1C81A92C00F2C105 /* Specs.m */,
+				CEFABCEC1C81A92C00F2C105 /* Info.plist */,
+				CEFABD311C8223EF00F2C105 /* AWADCitySuggestsSpec.m */,
+				CEFABD331C82248600F2C105 /* Spec-Prefix.pch */,
+				CEFABD341C822BB200F2C105 /* SharingTestingData.h */,
+				CEFABD351C822BB200F2C105 /* SharingTestingData.m */,
+				CEFABD8F1C87591900F2C105 /* AWADSearchRequestSpec.m */,
+				CEFABDBB1C87A24900F2C105 /* AWADTicketsSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		CEFABCF21C81A9E900F2C105 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD0E1C82187800F2C105 /* Tickets */,
+				CEFABD121C82187800F2C105 /* InitSearchTicket */,
+				CEFABD161C82187800F2C105 /* CitySuggests */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		CEFABCF31C81A9E900F2C105 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD761C87179C00F2C105 /* DatePicker */,
+				CEFABD6B1C86126B00F2C105 /* Suggests */,
+				CEFABD4C1C848EDA00F2C105 /* Root */,
+				CEFABD3D1C84413B00F2C105 /* Results */,
+				CEFABD3E1C84413B00F2C105 /* Search */,
+				CEFABD3F1C84413B00F2C105 /* StartPage */,
+				CEFABD541C84989A00F2C105 /* AWADFlowController.h */,
+				CEFABD551C84989A00F2C105 /* AWADFlowController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEFABCF41C81A9E900F2C105 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABCF91C81AA6300F2C105 /* AppDelegate.h */,
+				CEFABCFA1C81AA6300F2C105 /* AppDelegate.m */,
+				CEFABCFE1C81AEBA00F2C105 /* Configuration.plist */,
+				CEFABD001C81AECA00F2C105 /* TestConfiguration.plist */,
+				CEFABD021C81B30000F2C105 /* AWADDALAssembly.h */,
+				CEFABD031C81B30000F2C105 /* AWADDALAssembly.m */,
+				CEFABD051C81B39700F2C105 /* AWADApplicationAssembly.h */,
+				CEFABD061C81B39700F2C105 /* AWADApplicationAssembly.m */,
+				CEFABD081C81B46F00F2C105 /* AWADTestDALAssembly.h */,
+				CEFABD091C81B46F00F2C105 /* AWADTestDALAssembly.m */,
+				CEFABD511C8495E700F2C105 /* AWADFlowAssembly.h */,
+				CEFABD521C8495E700F2C105 /* AWADFlowAssembly.m */,
+				CEFABD5B1C84A6AB00F2C105 /* AWADRouterAssembly.h */,
+				CEFABD5C1C84A6AB00F2C105 /* AWADRouterAssembly.m */,
+				CEFABD651C85F23F00F2C105 /* AWADInteractorAssembly.h */,
+				CEFABD661C85F23F00F2C105 /* AWADInteractorAssembly.m */,
+				CEFABD681C85F27400F2C105 /* AWADPresenterAssembly.h */,
+				CEFABD691C85F27400F2C105 /* AWADPresenterAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CEFABCF51C81AA3400F2C105 /* Stroyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABCC81C81A80300F2C105 /* Main.storyboard */,
+				CEFABCCD1C81A80300F2C105 /* LaunchScreen.storyboard */,
+			);
+			path = Stroyboards;
+			sourceTree = "<group>";
+		};
+		CEFABD0E1C82187800F2C105 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD0F1C82187800F2C105 /* Model */,
+				CEFABD101C82187800F2C105 /* Repository */,
+				CEFABD111C82187800F2C105 /* Service */,
+				CEFABDBA1C87A00500F2C105 /* AWADTicketsDAL.h */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		CEFABD0F1C82187800F2C105 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABDBD1C87A6D200F2C105 /* AWADTicketsResultModel.h */,
+				CEFABDBE1C87A6D200F2C105 /* AWADTicketsResultModel.m */,
+				CEFABDC01C87A70300F2C105 /* AWADTicketsItemModel.h */,
+				CEFABDC11C87A70300F2C105 /* AWADTicketsItemModel.m */,
+				CEFABDC31C87A9F000F2C105 /* AWADTicketsFareItem.h */,
+				CEFABDC41C87A9F000F2C105 /* AWADTicketsFareItem.m */,
+				CEFABDC61C87BDBC00F2C105 /* AWADTickerRequestState.h */,
+				CEFABDC71C87BDBC00F2C105 /* AWADTickerRequestState.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEFABD101C82187800F2C105 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABDB21C879E6E00F2C105 /* AWADTicketsRepositoryImpl.h */,
+				CEFABDB31C879E6E00F2C105 /* AWADTicketsRepositoryImpl.m */,
+				CEFABDB91C879EAD00F2C105 /* AWADTicketsRepository.h */,
+				CEFABDC91C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.h */,
+				CEFABDCA1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m */,
+				CEFABDCC1C87BE2D00F2C105 /* AWADTicketsRequestStateRepository.h */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CEFABD111C82187800F2C105 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABDB51C879E8700F2C105 /* AWADTicketsServiceImpl.h */,
+				CEFABDB61C879E8700F2C105 /* AWADTicketsServiceImpl.m */,
+				CEFABDB81C879E9900F2C105 /* AWADTicketsService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEFABD121C82187800F2C105 /* InitSearchTicket */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD131C82187800F2C105 /* Model */,
+				CEFABD141C82187800F2C105 /* Repository */,
+				CEFABD151C82187800F2C105 /* Service */,
+				CEFABD8E1C87568200F2C105 /* AWADSearchDAL.h */,
+			);
+			path = InitSearchTicket;
+			sourceTree = "<group>";
+		};
+		CEFABD131C82187800F2C105 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD911C87605900F2C105 /* AWADSearchRequestModel.h */,
+				CEFABD921C87605900F2C105 /* AWADSearchRequestModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEFABD141C82187800F2C105 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD861C8755CB00F2C105 /* AWADSearchRepositoryImpl.h */,
+				CEFABD871C8755CB00F2C105 /* AWADSearchRepositoryImpl.m */,
+				CEFABD8C1C8755F300F2C105 /* AWADSearchRepository.h */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CEFABD151C82187800F2C105 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD891C8755DB00F2C105 /* AWADSearchServiceImpl.h */,
+				CEFABD8A1C8755DB00F2C105 /* AWADSearchServiceImpl.m */,
+				CEFABD8D1C87560B00F2C105 /* AWADSearchService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEFABD161C82187800F2C105 /* CitySuggests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD171C82187800F2C105 /* Model */,
+				CEFABD181C82187800F2C105 /* Repository */,
+				CEFABD191C82187800F2C105 /* Service */,
+				CEFABD1A1C8219C800F2C105 /* AWADCitySuggestsDAL.h */,
+			);
+			path = CitySuggests;
+			sourceTree = "<group>";
+		};
+		CEFABD171C82187800F2C105 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD251C82212200F2C105 /* AWADCitySuggestModel.h */,
+				CEFABD261C82212200F2C105 /* AWADCitySuggestModel.m */,
+				CEFABD291C82223300F2C105 /* AWADCitySuggestResult.h */,
+				CEFABD2A1C82223300F2C105 /* AWADCitySuggestResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEFABD181C82187800F2C105 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD1B1C821A4E00F2C105 /* AWADCitySuggestRepository.h */,
+				CEFABD1C1C821A7D00F2C105 /* AWADCitySuggestRepositoryImpl.h */,
+				CEFABD1D1C821A7D00F2C105 /* AWADCitySuggestRepositoryImpl.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CEFABD191C82187800F2C105 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD201C821B7C00F2C105 /* AWADCitySuggestService.h */,
+				CEFABD211C821BB700F2C105 /* AWADCitySuggestServiceImpl.h */,
+				CEFABD221C821BB700F2C105 /* AWADCitySuggestServiceImpl.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEFABD3D1C84413B00F2C105 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABDA91C8789E000F2C105 /* AWADResultView.h */,
+				CEFABDAA1C8789E000F2C105 /* AWADResultInteractor.h */,
+				CEFABDAB1C8789E000F2C105 /* AWADResultInteractor.m */,
+				CEFABDAC1C8789E000F2C105 /* AWADResultIO.h */,
+				CEFABDAD1C8789E000F2C105 /* AWADResultPresenter.h */,
+				CEFABDAE1C8789E000F2C105 /* AWADResultPresenter.m */,
+				CEFABDAF1C8789E000F2C105 /* AWADResultProtocol.h */,
+				CEFABDA61C87899100F2C105 /* AWADResultViewController.h */,
+				CEFABDA71C87899100F2C105 /* AWADResultViewController.m */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		CEFABD3E1C84413B00F2C105 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD5E1C85F02500F2C105 /* AWADSearchViewController.h */,
+				CEFABD5F1C85F02500F2C105 /* AWADSearchViewController.m */,
+				CEFABD9A1C87661B00F2C105 /* AWADSearchPresenter.h */,
+				CEFABD9B1C87661B00F2C105 /* AWADSearchPresenter.m */,
+				CEFABD9D1C87662900F2C105 /* AWADSearchView.h */,
+				CEFABDA41C8766C600F2C105 /* AWADSearchIO.h */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CEFABD3F1C84413B00F2C105 /* StartPage */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD411C84423D00F2C105 /* AWADStartPageViewController.h */,
+				CEFABD421C84423D00F2C105 /* AWADStartPageViewController.m */,
+				CEFABD401C84419F00F2C105 /* AWADStartPageView.h */,
+				CEFABD441C84427D00F2C105 /* AWADStartPagePresenter.h */,
+				CEFABD451C84427D00F2C105 /* AWADStartPagePresenter.m */,
+				CEFABD471C8442A100F2C105 /* AWADStartPageIO.h */,
+				CEFABD481C8443BF00F2C105 /* AWADStartPageInteractor.h */,
+				CEFABD491C8443BF00F2C105 /* AWADStartPageInteractor.m */,
+			);
+			path = StartPage;
+			sourceTree = "<group>";
+		};
+		CEFABD4B1C84446500F2C105 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD4D1C84910300F2C105 /* AWADRouter.h */,
+				CEFABD4E1C8493DB00F2C105 /* AWADRouterImpl.h */,
+				CEFABD4F1C8493DB00F2C105 /* AWADRouterImpl.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CEFABD4C1C848EDA00F2C105 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD581C84A26400F2C105 /* AWADRootViewController.h */,
+				CEFABD591C84A26400F2C105 /* AWADRootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CEFABD611C85F0A400F2C105 /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD621C85F0BD00F2C105 /* AWADUserInputModel.h */,
+				CEFABD631C85F0BD00F2C105 /* AWADUserInputModel.m */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		CEFABD6B1C86126B00F2C105 /* Suggests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD6C1C86128200F2C105 /* AWADSuggestsViewController.h */,
+				CEFABD6D1C86128200F2C105 /* AWADSuggestsViewController.m */,
+				CEFABD6F1C86C98600F2C105 /* AWADSuggestsPresenter.h */,
+				CEFABD701C86C98600F2C105 /* AWADSuggestsPresenter.m */,
+				CEFABD721C86C9B500F2C105 /* AWADSuggestsIO.h */,
+				CEFABD731C86CAE100F2C105 /* AWADSuggestsView.h */,
+			);
+			path = Suggests;
+			sourceTree = "<group>";
+		};
+		CEFABD761C87179C00F2C105 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABD771C8717BB00F2C105 /* AWADDatePickerViewController.h */,
+				CEFABD781C8717BB00F2C105 /* AWADDatePickerViewController.m */,
+				CEFABD7A1C8717DE00F2C105 /* AWADDatePickerPresenter.h */,
+				CEFABD7B1C8717DE00F2C105 /* AWADDatePickerPresenter.m */,
+				CEFABD7D1C8717F400F2C105 /* AWADDatePickerView.h */,
+				CEFABD801C87187A00F2C105 /* AWADDatePickerIO.h */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEFABCBB1C81A80300F2C105 /* AWAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFABCDE1C81A80300F2C105 /* Build configuration list for PBXNativeTarget "AWAD" */;
+			buildPhases = (
+				3E4A5C97A30117F4CCFFFED3 /* Check Pods Manifest.lock */,
+				CEFABCB81C81A80300F2C105 /* Sources */,
+				CEFABCB91C81A80300F2C105 /* Frameworks */,
+				CEFABCBA1C81A80300F2C105 /* Resources */,
+				3796685EE9D668B80DE4593D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWAD;
+			productName = AWAD;
+			productReference = CEFABCBC1C81A80300F2C105 /* AWAD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEFABCE71C81A92C00F2C105 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFABCEF1C81A92C00F2C105 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				7B8BA7D7FFA8589701F2739F /* Check Pods Manifest.lock */,
+				CEFABCE41C81A92C00F2C105 /* Sources */,
+				CEFABCE51C81A92C00F2C105 /* Frameworks */,
+				CEFABCE61C81A92C00F2C105 /* Resources */,
+				A1FAD7B786638875624EA154 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFABCEE1C81A92C00F2C105 /* PBXTargetDependency */,
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = CEFABCE81C81A92C00F2C105 /* Specs.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFABCB41C81A80300F2C105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CEFABCBB1C81A80300F2C105 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CEFABCE71C81A92C00F2C105 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CEFABCBB1C81A80300F2C105;
+					};
+				};
+			};
+			buildConfigurationList = CEFABCB71C81A80300F2C105 /* Build configuration list for PBXProject "AWAD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEFABCB31C81A80300F2C105;
+			productRefGroup = CEFABCBD1C81A80300F2C105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEFABCBB1C81A80300F2C105 /* AWAD */,
+				CEFABCE71C81A92C00F2C105 /* Specs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEFABCBA1C81A80300F2C105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFABCCF1C81A80300F2C105 /* LaunchScreen.storyboard in Resources */,
+				CEFABD011C81AECA00F2C105 /* TestConfiguration.plist in Resources */,
+				CEFABCFF1C81AEBA00F2C105 /* Configuration.plist in Resources */,
+				CEFABCCC1C81A80300F2C105 /* Assets.xcassets in Resources */,
+				CEFABCCA1C81A80300F2C105 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFABCE61C81A92C00F2C105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3796685EE9D668B80DE4593D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWAD/Pods-AWAD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E4A5C97A30117F4CCFFFED3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B8BA7D7FFA8589701F2739F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1FAD7B786638875624EA154 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Specs/Pods-Specs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEFABCB81C81A80300F2C105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFABDC21C87A70300F2C105 /* AWADTicketsItemModel.m in Sources */,
+				CEFABD271C82212200F2C105 /* AWADCitySuggestModel.m in Sources */,
+				CEFABD501C8493DB00F2C105 /* AWADRouterImpl.m in Sources */,
+				CEFABD4A1C8443BF00F2C105 /* AWADStartPageInteractor.m in Sources */,
+				CEFABDC81C87BDBC00F2C105 /* AWADTickerRequestState.m in Sources */,
+				CEFABCC11C81A80300F2C105 /* main.m in Sources */,
+				CEFABD8B1C8755DB00F2C105 /* AWADSearchServiceImpl.m in Sources */,
+				CEFABD711C86C98600F2C105 /* AWADSuggestsPresenter.m in Sources */,
+				CEFABD231C821BB700F2C105 /* AWADCitySuggestServiceImpl.m in Sources */,
+				CEFABDBF1C87A6D200F2C105 /* AWADTicketsResultModel.m in Sources */,
+				CEFABDCB1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m in Sources */,
+				CEFABD5A1C84A26400F2C105 /* AWADRootViewController.m in Sources */,
+				CEFABDB11C8789E000F2C105 /* AWADResultPresenter.m in Sources */,
+				CEFABDB01C8789E000F2C105 /* AWADResultInteractor.m in Sources */,
+				CEFABD6E1C86128200F2C105 /* AWADSuggestsViewController.m in Sources */,
+				CEFABD461C84427D00F2C105 /* AWADStartPagePresenter.m in Sources */,
+				CEFABD371C822F6B00F2C105 /* SharingTestingData.m in Sources */,
+				CEFABD881C8755CB00F2C105 /* AWADSearchRepositoryImpl.m in Sources */,
+				CEFABD671C85F23F00F2C105 /* AWADInteractorAssembly.m in Sources */,
+				CEFABD531C8495E700F2C105 /* AWADFlowAssembly.m in Sources */,
+				CEFABD5D1C84A6AB00F2C105 /* AWADRouterAssembly.m in Sources */,
+				CEFABD561C84989A00F2C105 /* AWADFlowController.m in Sources */,
+				CEFABD0A1C81B46F00F2C105 /* AWADTestDALAssembly.m in Sources */,
+				CEFABD601C85F02500F2C105 /* AWADSearchViewController.m in Sources */,
+				CEFABD431C84423D00F2C105 /* AWADStartPageViewController.m in Sources */,
+				CEFABD041C81B30000F2C105 /* AWADDALAssembly.m in Sources */,
+				CEFABD071C81B39700F2C105 /* AWADApplicationAssembly.m in Sources */,
+				CEFABD791C8717BB00F2C105 /* AWADDatePickerViewController.m in Sources */,
+				CEFABD931C87605A00F2C105 /* AWADSearchRequestModel.m in Sources */,
+				CEFABD6A1C85F27400F2C105 /* AWADPresenterAssembly.m in Sources */,
+				CEFABDB41C879E6E00F2C105 /* AWADTicketsRepositoryImpl.m in Sources */,
+				CEFABD641C85F0BD00F2C105 /* AWADUserInputModel.m in Sources */,
+				CEFABDB71C879E8700F2C105 /* AWADTicketsServiceImpl.m in Sources */,
+				CEFABD9C1C87661B00F2C105 /* AWADSearchPresenter.m in Sources */,
+				CEFABCFB1C81AA6300F2C105 /* AppDelegate.m in Sources */,
+				CEFABD1E1C821A7D00F2C105 /* AWADCitySuggestRepositoryImpl.m in Sources */,
+				CEFABDA81C87899100F2C105 /* AWADResultViewController.m in Sources */,
+				CEFABD2B1C82223300F2C105 /* AWADCitySuggestResult.m in Sources */,
+				CEFABD7C1C8717DE00F2C105 /* AWADDatePickerPresenter.m in Sources */,
+				CEFABDC51C87A9F000F2C105 /* AWADTicketsFareItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFABCE41C81A92C00F2C105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFABD321C8223EF00F2C105 /* AWADCitySuggestsSpec.m in Sources */,
+				CEFABD901C87591900F2C105 /* AWADSearchRequestSpec.m in Sources */,
+				CEFABCEB1C81A92C00F2C105 /* Specs.m in Sources */,
+				CEFABDBC1C87A24900F2C105 /* AWADTicketsSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEFABCEE1C81A92C00F2C105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFABCBB1C81A80300F2C105 /* AWAD */;
+			targetProxy = CEFABCED1C81A92C00F2C105 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEFABCC81C81A80300F2C105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFABCC91C81A80300F2C105 /* Base */,
+				CEFABCFC1C81AE0400F2C105 /* ru */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CEFABCCD1C81A80300F2C105 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFABCCE1C81A80300F2C105 /* Base */,
+				CEFABCFD1C81AE0400F2C105 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEFABCDC1C81A80300F2C105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEFABCDD1C81A80300F2C105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEFABCDF1C81A80300F2C105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9F0014716C449633BF1D2C /* Pods-AWAD.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWAD/AWAD-Prefix.pch";
+				INFOPLIST_FILE = AWAD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VA.AWAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEFABCE01C81A80300F2C105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A06C140EA3F4C91E799F8F /* Pods-AWAD.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AWAD/AWAD-Prefix.pch";
+				INFOPLIST_FILE = AWAD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VA.AWAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEFABCF01C81A92C00F2C105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069C2D9E5004A14BD8AF8DF6 /* Pods-Specs.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Spec-Prefix.pch";
+				INFOPLIST_FILE = Specs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VA.Specs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWAD.app/AWAD";
+			};
+			name = Debug;
+		};
+		CEFABCF11C81A92C00F2C105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFBF314EF27E6AF732503D0 /* Pods-Specs.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Spec-Prefix.pch";
+				INFOPLIST_FILE = Specs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VA.Specs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWAD.app/AWAD";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEFABCB71C81A80300F2C105 /* Build configuration list for PBXProject "AWAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFABCDC1C81A80300F2C105 /* Debug */,
+				CEFABCDD1C81A80300F2C105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFABCDE1C81A80300F2C105 /* Build configuration list for PBXNativeTarget "AWAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFABCDF1C81A80300F2C105 /* Debug */,
+				CEFABCE01C81A80300F2C105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFABCEF1C81A92C00F2C105 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFABCF01C81A92C00F2C105 /* Debug */,
+				CEFABCF11C81A92C00F2C105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFABCB41C81A80300F2C105 /* Project object */;
+}
