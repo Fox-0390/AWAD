@@ -30,7 +30,8 @@
     return self;
 }
 
-- (PMKPromise *)ticketRequestState:(NSString *)text{
+- (PMKPromise *)ticketRequestState:(NSString *)text callBackPercent:(percentCallback) callback{
+    __weak typeof(self) _welf = self;
     return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
         NSURL *requestURL = [self requestURLForText:text];
         [[self.urlSession dataTaskWithURL:requestURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -50,7 +51,20 @@
                 resolve(parsingError);
                 return;
             }
-            resolve(result);
+            if ([result.completed doubleValue] < 100) {
+               
+                callback([result.completed doubleValue]);
+               resolve([_welf ticketRequestState:text callBackPercent:^(double percent) {
+                   callback(percent);
+                  
+               }]);
+                
+               
+            }
+            else
+            {
+                resolve(result);
+            }
             
         }]resume];
     }];

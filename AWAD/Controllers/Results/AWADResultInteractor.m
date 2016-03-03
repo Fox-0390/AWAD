@@ -9,6 +9,10 @@
 #import "AWADResultInteractor.h"
 #import "AWADUserInputModel.h"
 #import "AWADSearchRequestModel.h"
+
+#import "AWADTicketsItemModel.h"
+#import "AWADTicketsFareItem.h"
+#import "ASTSort.h"
 @interface AWADResultInteractor()
 
 @property (nonatomic, weak) AWADUserInputModel *currentUserModel;
@@ -43,19 +47,42 @@
 - (void)_startSearchService{
     NSString* requestString = [self.currentUserModel getSearchRequest];
     __weak typeof(self) _weakSelf = self;
-    [self.searchService searchForText:requestString].then(^(AWADSearchRequestModel * model)
-                                                          {
-                                                              if (!model.error) {
-                                                                  [self.ticketsService ticketsForString:model.synonym percentage:^(double currentPercent) {
-                                                                      
-                                                                  }].then(^(NSArray* array){
-                                                                      _currentResults = array;
-                                                                  });
-                                                                  
-                                                                                                                                 };
-                                                                }).catch(^(NSError* error){
-                                                                                      // TODO: alertView maybe)
-                                                                                     });
+
+   __block NSString* synonim;
+    [self.searchService searchForText:requestString].then(^(AWADSearchRequestModel *result){
+        synonim = result.synonym;
+        return [self.ticketsService ticketsForString:synonim callBackPercent:^(double percent) {
+            NSLog(@"%f",percent);
+        }];
+    }).then(^(NSArray *obj){
+        return [self processResult:obj];
+    });
+
+ 
+}
+
+
+- (PMKPromise* )processResult:(NSArray*)arr{
+    return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
+        for (AWADTicketsItemModel *item in arr) {
+            
+            NSArray* newArray = ASTSort(item.fares, ^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+                AWADTicketsFareItem *firstItem = obj1;
+                AWADTicketsFareItem *secondItem = obj2;
+                if (firstItem.totalAmount>secondItem.totalAmount) {
+                    return NSOrderedAscending;
+                }
+                if (firstItem.totalAmount<secondItem.totalAmount) {
+                    return NSOrderedDescending;
+                }
+                
+                return NSOrderedSame;
+            });
+            item.fares = newArray;
+            
+        }
+        resolve(arr);
+    }];
 }
 
 @end

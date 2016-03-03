@@ -11,49 +11,47 @@
 #import "AWADTicketsItemModel.h"
 #import "AWADTicketsFareItem.h"
 #import "AWADTickerRequestState.h"
-@implementation AWADTicketsServiceImpl
+@implementation AWADTicketsServiceImpl{
+    percentCallback _block;
+}
 
 
 
--(PMKPromise *)ticketsForString:(NSString *)text percentage:(percentage)percent{
-   
-    
-    return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
-            PMKPromise *result = [self.repository ticketsForString:text];
-            result.then(^(NSArray* array){
+-(PMKPromise *)ticketsForString:(NSString *)text callBackPercent:(percentCallback) callback{
+    _block = [callback copy];
+    return [self getRequestState:text].then( ^(id obj) {
+                                            return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
+        PMKPromise *result = [self.repository ticketsForString:text];
+        result.then(^(NSArray* array){
             for (AWADTicketsItemModel *item in array) {
-             
+                
                 NSArray* newArray = ASTSort(item.fares, ^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
                     AWADTicketsFareItem *firstItem = obj1;
                     AWADTicketsFareItem *secondItem = obj2;
-                    if (firstItem.totalAmount>secondItem.totalAmount) {
+                    if (firstItem.totalAmount > secondItem.totalAmount) {
                         return NSOrderedAscending;
                     }
-                    if (firstItem.totalAmount<secondItem.totalAmount) {
+                    if (firstItem.totalAmount < secondItem.totalAmount) {
                         return NSOrderedDescending;
                     }
-                    
-                    return NSOrderedSame;
+                     return NSOrderedSame;
                 });
                 item.fares = newArray;
                 
             }
             resolve(array);
-
-
+            
+            
         });
         
-    }];
+                                            }];
+    });
 }
 
--(double)updateState:(NSString*)text{
-     __block double curPercent = 0.0f;
-  PMKPromise *p =[self.requestStateRepository ticketRequestState:text];
-    [PMKPromise when:p].then(^(AWADTickerRequestState *state){
-        
-        curPercent = [state.completed doubleValue];
-        
-    });
-    return curPercent;
+
+- (PMKPromise*) getRequestState:(NSString*)text{
+    return [self.requestStateRepository ticketRequestState:text callBackPercent:_block];
 }
+
+
 @end

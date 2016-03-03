@@ -14,13 +14,16 @@
 #import <RestKit/ObjectMapping/RKObjectMappingOperationDataSource.h>
 @interface AWADTicketsRepositoryImpl()
 
+
 @property (strong, nonatomic) NSURLSession *urlSession;
 
 @end
 
 @implementation AWADTicketsRepositoryImpl{
     NSString* _baseUrl;
+//    void (^_percentCallback) (double *percentValue);
 }
+
 
 -(instancetype)initWithBaseUrl:(NSString *)baseUrl{
     self = [super init];
@@ -34,6 +37,7 @@
 #pragma mark - AWADTicketsRepository
 
 - (PMKPromise *)ticketsForString:(NSString *)text{
+    
     return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
         NSURL *requestURL = [self requestURLForText:text];
         [[self.urlSession dataTaskWithURL:requestURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -53,6 +57,7 @@
                 resolve(parsingError);
                 return;
             }
+            
             resolve(result.items);
 
             

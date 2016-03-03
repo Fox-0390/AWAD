@@ -10,9 +10,11 @@
 #define AWADTicketsRequestStateRepository_h
 #import <PromiseKit/PromiseKit.h>
 
+typedef void(^percentCallback)(double percent);
+
 @protocol AWADTicketsRequestStateRepository 
 
-- (PMKPromise *)ticketRequestState:(NSString *)text;
+- (PMKPromise *)ticketRequestState:(NSString *)text callBackPercent:(percentCallback) callback;
 
 @end
 

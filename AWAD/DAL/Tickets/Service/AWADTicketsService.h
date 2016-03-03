@@ -8,12 +8,12 @@
 
 #ifndef AWADTicketsService_h
 #define AWADTicketsService_h
-
+#import "AWADTicketsRequestStateRepository.h"
 #import <PromiseKit/PromiseKit.h>
-typedef void (^percentage)(double currentPercent);
+
 @protocol AWADTicketsService 
 
-- (PMKPromise *)ticketsForString:(NSString *)text percentage:(percentage) percent;
+-(PMKPromise *)ticketsForString:(NSString *)text callBackPercent:(percentCallback) callback;
 
 
 
