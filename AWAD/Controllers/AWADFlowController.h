@@ -20,7 +20,7 @@
                                   inView:(UIView*)view;
 
 - (void)hideSuggestsAndRemoveFromSourceController:(UIViewController*)suggestsViewController
-                              sourceVieController:(UIViewController*)   sourceViewController
+                              sourceVieController:(UIViewController*)sourceViewController
                                            inView:(UIView*)view;
                                     
 - (void)showDatePickerPresentedViewController:(UIViewController*)sourceViewController;
@@ -28,6 +28,8 @@
 
 - (void)showSearchPage:(UIViewController*)sourceViewController;
 
-- (void)showDownloadingView:(UIViewController*)sourceViewController inView:(UIView*)view;
-
+- (void)showProgressView:(UIViewController*)sourceViewController inView:(UIView*)view;
+- (void)hideProgressView:(UIViewController*)suggestsViewController
+     sourceVieController:(UIViewController*)sourceViewController
+                  inView:(UIView*)view;
 @end

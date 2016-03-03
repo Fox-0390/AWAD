@@ -54,10 +54,13 @@
             if ([result.completed doubleValue] < 100) {
                
                 callback([result.completed doubleValue]);
-               resolve([_welf ticketRequestState:text callBackPercent:^(double percent) {
-                   callback(percent);
-                  
-               }]);
+                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC));
+                dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                    resolve([_welf ticketRequestState:text callBackPercent:^(double percent) {
+                        callback(percent);
+                        
+                    }]);                });
+              
                 
                
             }

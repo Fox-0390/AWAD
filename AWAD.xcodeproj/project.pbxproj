@@ -10,7 +10,6 @@
 		20C7D139A26B05AFF64D8F09 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A669480FA23D3341DC4F0F2 /* libPods-Specs.a */; };
 		65FBF910F012865D3A711C55 /* libPods-AWAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF75CBDC32186D09F655BB /* libPods-AWAD.a */; };
 		CEFABCC11C81A80300F2C105 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABCC01C81A80300F2C105 /* main.m */; };
-		CEFABCCA1C81A80300F2C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFABCC81C81A80300F2C105 /* Main.storyboard */; };
 		CEFABCCC1C81A80300F2C105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFABCCB1C81A80300F2C105 /* Assets.xcassets */; };
 		CEFABCCF1C81A80300F2C105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFABCCD1C81A80300F2C105 /* LaunchScreen.storyboard */; };
 		CEFABCEB1C81A92C00F2C105 /* Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABCEA1C81A92C00F2C105 /* Specs.m */; };
@@ -58,6 +57,8 @@
 		CEFABDC51C87A9F000F2C105 /* AWADTicketsFareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDC41C87A9F000F2C105 /* AWADTicketsFareItem.m */; };
 		CEFABDC81C87BDBC00F2C105 /* AWADTickerRequestState.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDC71C87BDBC00F2C105 /* AWADTickerRequestState.m */; };
 		CEFABDCB1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDCA1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m */; };
+		CEFABDD31C88B2C100F2C105 /* AWADResultDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFABDD21C88B2C000F2C105 /* AWADResultDetailViewController.m */; };
+		CEFABDD51C88B3E600F2C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFABDD41C88B3E600F2C105 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +79,6 @@
 		BCFBF314EF27E6AF732503D0 /* Pods-Specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.release.xcconfig"; sourceTree = "<group>"; };
 		CEFABCBC1C81A80300F2C105 /* AWAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFABCC01C81A80300F2C105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEFABCC91C81A80300F2C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEFABCCB1C81A80300F2C105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFABCCE1C81A80300F2C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEFABCD01C81A80300F2C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,7 +87,6 @@
 		CEFABCEC1C81A92C00F2C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEFABCF91C81AA6300F2C105 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEFABCFA1C81AA6300F2C105 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEFABCFC1C81AE0400F2C105 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		CEFABCFD1C81AE0400F2C105 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CEFABCFE1C81AEBA00F2C105 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		CEFABD001C81AECA00F2C105 /* TestConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestConfiguration.plist; sourceTree = "<group>"; };
@@ -194,6 +193,9 @@
 		CEFABDC91C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsRequestStateRepositoryImpl.h; sourceTree = "<group>"; };
 		CEFABDCA1C87BE0E00F2C105 /* AWADTicketsRequestStateRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADTicketsRequestStateRepositoryImpl.m; sourceTree = "<group>"; };
 		CEFABDCC1C87BE2D00F2C105 /* AWADTicketsRequestStateRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADTicketsRequestStateRepository.h; sourceTree = "<group>"; };
+		CEFABDD11C88B2C000F2C105 /* AWADResultDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWADResultDetailViewController.h; sourceTree = "<group>"; };
+		CEFABDD21C88B2C000F2C105 /* AWADResultDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWADResultDetailViewController.m; sourceTree = "<group>"; };
+		CEFABDD41C88B3E600F2C105 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		D2BF75CBDC32186D09F655BB /* libPods-AWAD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AWAD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -310,6 +312,7 @@
 		CEFABCF31C81A9E900F2C105 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CEFABDD01C88B2C000F2C105 /* ResultDetail */,
 				CEFABD761C87179C00F2C105 /* DatePicker */,
 				CEFABD6B1C86126B00F2C105 /* Suggests */,
 				CEFABD4C1C848EDA00F2C105 /* Root */,
@@ -350,8 +353,8 @@
 		CEFABCF51C81AA3400F2C105 /* Stroyboards */ = {
 			isa = PBXGroup;
 			children = (
-				CEFABCC81C81A80300F2C105 /* Main.storyboard */,
 				CEFABCCD1C81A80300F2C105 /* LaunchScreen.storyboard */,
+				CEFABDD41C88B3E600F2C105 /* Main.storyboard */,
 			);
 			path = Stroyboards;
 			sourceTree = "<group>";
@@ -585,6 +588,15 @@
 			path = DatePicker;
 			sourceTree = "<group>";
 		};
+		CEFABDD01C88B2C000F2C105 /* ResultDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CEFABDD11C88B2C000F2C105 /* AWADResultDetailViewController.h */,
+				CEFABDD21C88B2C000F2C105 /* AWADResultDetailViewController.m */,
+			);
+			path = ResultDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -670,10 +682,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFABCCF1C81A80300F2C105 /* LaunchScreen.storyboard in Resources */,
+				CEFABDD51C88B3E600F2C105 /* Main.storyboard in Resources */,
 				CEFABD011C81AECA00F2C105 /* TestConfiguration.plist in Resources */,
 				CEFABCFF1C81AEBA00F2C105 /* Configuration.plist in Resources */,
 				CEFABCCC1C81A80300F2C105 /* Assets.xcassets in Resources */,
-				CEFABCCA1C81A80300F2C105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +768,7 @@
 			files = (
 				CEFABDC21C87A70300F2C105 /* AWADTicketsItemModel.m in Sources */,
 				CEFABD271C82212200F2C105 /* AWADCitySuggestModel.m in Sources */,
+				CEFABDD31C88B2C100F2C105 /* AWADResultDetailViewController.m in Sources */,
 				CEFABD501C8493DB00F2C105 /* AWADRouterImpl.m in Sources */,
 				CEFABD4A1C8443BF00F2C105 /* AWADStartPageInteractor.m in Sources */,
 				CEFABDC81C87BDBC00F2C105 /* AWADTickerRequestState.m in Sources */,
@@ -819,16 +832,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEFABCC81C81A80300F2C105 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEFABCC91C81A80300F2C105 /* Base */,
-				CEFABCFC1C81AE0400F2C105 /* ru */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		CEFABCCD1C81A80300F2C105 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

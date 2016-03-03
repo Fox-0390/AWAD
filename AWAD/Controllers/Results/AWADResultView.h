@@ -10,4 +10,8 @@
 
 @protocol AWADResultView
 
+- (void)updateDataSource:(NSArray*)arr;
+
+@property (nonatomic,strong) UIView* containerView;
+
 @end

@@ -95,15 +95,28 @@ NSString *const kAWADRouterSchemeName = @"awad";
             [__weakSelf.flowController showSearchPage:sourceViewController];
             
         }
-//        if([action isEqualToString:@"hide"]){
-//            __weakSelf.flowController = [__weakSelf.flowAssembly flowController];
-//            UIViewController *sourceViewController = parameters[kAWADRouterSourceViewControllerParameterKey];
-//            [__weakSelf.flowController dismissDatePicker:sourceViewController];
-//            
-//        }
-        
         return YES;
     }];
+[_router addRoute:@"/showProgressView/" handler:^BOOL(NSDictionary *parameters) {
+    NSString *action = parameters[@"action"];
+        if([action isEqualToString:@"show"]){
+            __weakSelf.flowController = [__weakSelf.flowAssembly flowController];
+            UIViewController *sourceViewController = parameters[kAWADRouterSourceViewControllerParameterKey];
+            UIView * contentView = parameters[kAWADRouterContainerViewParameterKey];
+            [__weakSelf.flowController showProgressView:sourceViewController inView:contentView];
+        
+            }
+            if([action isEqualToString:@"hide"]){
+                __weakSelf.flowController = [__weakSelf.flowAssembly flowController];
+                UIViewController *sourceViewController = parameters[kAWADRouterSourceViewControllerParameterKey];
+                UIViewController *progressViewController = parameters[kAWADRouterSecondViewControllerParameterKey];
+                UIView * contentView = parameters[kAWADRouterContainerViewParameterKey];
+                [__weakSelf.flowController hideProgressView:progressViewController sourceVieController:sourceViewController inView:contentView];
+    
+            }
+    
+    return YES;
+}];
 
 
 }

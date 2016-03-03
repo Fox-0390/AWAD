@@ -50,7 +50,7 @@
 -(id<AWADResultOutput>)resultPresenter{
     return [TyphoonDefinition withClass:[AWADResultPresenter class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(interactor) with:[self.interactorAssembly resultInteractor]];
-//        [definition injectProperty:@selector(router) with:[self.routerAssembly awadRouter]];
+        [definition injectProperty:@selector(router) with:[self.routerAssembly awadRouter]];
 //        definition.scope = TyphoonScopeLazySingleton;
     }];
 }
@@ -58,8 +58,8 @@
 -(id<AWADSearchOutput>)searchPresenter{
     return [TyphoonDefinition withClass:[AWADSearchPresenter class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(interactor) with:[self.interactorAssembly resultInteractor]];
-        //        [definition injectProperty:@selector(router) with:[self.routerAssembly awadRouter]];
-        //        definition.scope = TyphoonScopeLazySingleton;
+                [definition injectProperty:@selector(router) with:[self.routerAssembly awadRouter]];
+               definition.scope = TyphoonScopeWeakSingleton;
     }];
 
 }

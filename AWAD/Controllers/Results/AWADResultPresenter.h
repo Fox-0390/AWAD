@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "AWADResultIO.h"
 #import "AWADResultView.h"
-
+#import "AWADRouter.h"
 @interface AWADResultPresenter : NSObject<AWADResultOutput>
 
+@property (nonatomic, strong) id<AWADRouter> router;
 @property (nonatomic, strong) id<AWADResultInput> interactor;
 @property (nonatomic, weak) id<AWADResultView> view;
 

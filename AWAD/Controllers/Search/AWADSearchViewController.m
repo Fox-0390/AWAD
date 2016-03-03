@@ -9,7 +9,9 @@
 #import "AWADSearchViewController.h"
 
 @interface AWADSearchViewController ()
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 
+@property (weak, nonatomic) IBOutlet UILabel *processLabel;
 
 @end
 
@@ -17,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.progressView setProgress:0.0];
+    self.presenter.view = self;
     // Do any additional setup after loading the view.
 }
 
@@ -26,5 +30,14 @@
 }
 
 
+
+#pragma mark - AWADSearchView
+-(void)setProgressValue:(double)value{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.progressView setProgress:value/100 animated:YES];
+        [self.processLabel setText:[NSString stringWithFormat:@"%.2f%",value]];
+
+    });
+}
 
 @end

@@ -18,6 +18,7 @@
 #import "AWADDatePickerViewController.h"
 #import "AWADSearchViewController.h"
 #import "AWADResultViewController.h"
+
 @implementation AWADApplicationAssembly
 
 - (id)config {

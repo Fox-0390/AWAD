@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AWADResultPresenter.h"
 #import "AWADResultView.h"
-@interface AWADResultViewController : UIViewController<AWADResultView>
+@interface AWADResultViewController : UIViewController<AWADResultView,UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) AWADResultPresenter* presenter;
 

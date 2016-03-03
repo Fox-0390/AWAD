@@ -8,7 +8,7 @@
 
 @protocol AWADSearchView <NSObject>
 
-
+- (void) setProgressValue:(double)value;
 
 @end
 

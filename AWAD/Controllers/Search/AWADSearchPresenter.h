@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "AWADSearchIO.h"
-
-
+#import "AWADSearchView.h"
+#import "AWADRouter.h"
 @interface AWADSearchPresenter : NSObject<AWADSearchOutput>
 
+@property (nonatomic,strong) id<AWADRouter> router;
 @property (nonatomic, strong) id<AWADSearchInput> interactor;
-
+@property (nonatomic, weak) id<AWADSearchView> view;
 @end

@@ -13,8 +13,13 @@
 
 
 #pragma mark - AWADSearchOutput
--(void)presentView{
+- (void)presentView{
     
+}
+
+
+- (void)setProgress:(double)value{
+    [self.view setProgressValue:value];
 }
 
 @end

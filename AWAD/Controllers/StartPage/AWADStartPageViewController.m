@@ -29,6 +29,7 @@
     self.arrivalTextField.placeholder = @"Откуда";
     self.destinationTextField.placeholder = @"Куда";
     [self.datePickerButton setTitle:@"Выберите дату" forState:UIControlStateNormal];
+    [self.searchButton setTitle:@"Поиск" forState:UIControlStateNormal];
     [self.presenter updateView];
     suggestsContainer = self.suggestsView;
 }

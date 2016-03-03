@@ -13,5 +13,7 @@
 
 -(AWADUserInputModel*)getUserModel;
 
+
+
 @end
 #endif /* AWADResultProtocol_h */

@@ -18,8 +18,9 @@
 
 @protocol AWADResultOutput <NSObject>
 
-
-
+- (void) updateCollection:(NSArray*)arr;
+- (void) showProgressView;
+- (void)hideSearchView;
 @end
 
 #endif /* AWADResultIO_h */

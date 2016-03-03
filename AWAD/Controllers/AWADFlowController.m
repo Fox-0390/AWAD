@@ -12,6 +12,7 @@ static NSString* const kAWADStartPageViewController = @"startPageId";
 static NSString* const kAWADStartPageSuggestsViewController = @"suggestsVCId";
 static NSString* const kAWADStartPageDatePickerViewController = @"datePickerVCId";
 static NSString* const kAWADSearchPageViewController = @"searchPageVCId";
+static NSString* const kAWADProgressViewController = @"progressVCId";
 @implementation AWADFlowController
 
 
@@ -98,4 +99,27 @@ static NSString* const kAWADSearchPageViewController = @"searchPageVCId";
 //    [navVC.topViewController presentViewController:destVC animated:YES completion:nil];
 //    [navVC showViewController:destVC sender:self];
 }
+
+- (void)showProgressView:(UIViewController*)sourceViewController inView:(UIView*)view{
+    
+    view.hidden = NO;
+    if ([[view subviews] count]>0)return;
+     UIViewController* destVC = [self.storyboard instantiateViewControllerWithIdentifier:kAWADProgressViewController];
+    UIView *sourceView = view;
+    UIView *destView = destVC.view;
+    [sourceView addSubview:destVC.view];
+    NSMutableArray *constraints = [NSMutableArray new];
+    NSDictionary *views = @{@"view":destView};
+    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|" options:0 metrics:nil views:views]];
+    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|" options:0 metrics:nil views:views]];
+    [sourceView addConstraints:constraints];
+    
+    [destVC didMoveToParentViewController:sourceViewController];
+
+}
+
+-(void)hideProgressView:(UIViewController *)suggestsViewController sourceVieController:(UIViewController *)sourceViewController inView:(UIView *)view{
+    view.hidden = YES;
+}
+
 @end

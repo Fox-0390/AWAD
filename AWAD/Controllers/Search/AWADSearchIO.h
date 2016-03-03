@@ -19,6 +19,8 @@
 
 - (void) presentView;
 
+- (void)setProgress:(double)value;
+
 @end
 
 
